@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etA, etB, etC, etD;
+    EditText etA, etB, etC, etD, etCol1, etCol2;
     TextView tvResultado;
     Button btCalcular;
 
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Double d;
     Double res;
     Integer entero;
+    String col;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         etB = findViewById(R.id.et_b);
         etC = findViewById(R.id.et_c);
         etD = findViewById(R.id.et_d);
+        etCol1 = findViewById(R.id.et_col1);
+        etCol2 = findViewById(R.id.et_col2);
         tvResultado = findViewById(R.id.tv_resultado);
         btCalcular = findViewById(R.id.bt_calcular);
 
@@ -62,8 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
                 if(c==0.0){
                     res = (a*d)/b;
+                    col = etCol1.getText().toString();
                 }else if(d==0.0){
                     res =(b*c)/a;
+                    col = etCol2.getText().toString();
                 }else{
                     res = 0.0;
                     Toast.makeText(MainActivity.this,"Debe dejar una variable en blanco", Toast.LENGTH_LONG).show();
@@ -71,11 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
                 entero = (int) Math.floor(res);
                 if((entero-res)==0){
-                    tvResultado.setText(entero.toString());
+                    tvResultado.setText(entero.toString() +" "+ col);
                 }
                 else{
-                    Double red = Math.round(res*10.0)/10.0;
-                    tvResultado.setText(red.toString());
+                    Double red = Math.round(res*10.0)/10.0;//redondeo 1 decimal
+                    tvResultado.setText(red.toString()+" "+ col);
                 }
             }
         });
