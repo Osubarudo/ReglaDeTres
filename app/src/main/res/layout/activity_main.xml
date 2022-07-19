@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_alicia"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8">
+    </androidx.constraintlayout.widget.Guideline>
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/lavanda_azulado"
+        android:text="Resultado"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_f"
+        app:layout_constraintEnd_toStartOf="@+id/gl_d"
+        app:layout_constraintStart_toStartOf="@+id/gl_a"
+        app:layout_constraintTop_toTopOf="@+id/gl_e" />
+
+    <EditText
+        android:id="@+id/et_col1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Unidad 1"
+        android:textAlignment="center"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h"
+        app:layout_constraintEnd_toStartOf="@+id/gl_b"
+        app:layout_constraintStart_toStartOf="@+id/gl_a"
+        app:layout_constraintTop_toTopOf="@+id/gl_g" />
+
+    <EditText
+        android:id="@+id/et_col2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Unidad 2"
+        android:textAlignment="center"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_h"
+        app:layout_constraintEnd_toStartOf="@+id/gl_d"
+        app:layout_constraintStart_toStartOf="@+id/gl_c"
+        app:layout_constraintTop_toTopOf="@+id/gl_g" />
+
+    <EditText
+        android:id="@+id/et_a"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="A"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_j"
+        app:layout_constraintEnd_toStartOf="@+id/gl_b"
+        app:layout_constraintStart_toStartOf="@+id/gl_a"
+        app:layout_constraintTop_toTopOf="@+id/gl_i" />
+
+    <EditText
+        android:id="@+id/et_b"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="B"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_j"
+        app:layout_constraintEnd_toStartOf="@+id/gl_d"
+        app:layout_constraintStart_toStartOf="@+id/gl_c"
+        app:layout_constraintTop_toTopOf="@+id/gl_i" />
+
+    <EditText
+        android:id="@+id/et_c"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="C"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_l"
+        app:layout_constraintEnd_toStartOf="@+id/gl_b"
+        app:layout_constraintStart_toStartOf="@+id/gl_a"
+        app:layout_constraintTop_toTopOf="@+id/gl_k" />
+
+    <EditText
+        android:id="@+id/et_d"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="D"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/gl_l"
+        app:layout_constraintEnd_toStartOf="@+id/gl_d"
+        app:layout_constraintStart_toStartOf="@+id/gl_c"
+        app:layout_constraintTop_toTopOf="@+id/gl_k" />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="CALCULAR"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_n"
+        app:layout_constraintEnd_toStartOf="@+id/gl_d"
+        app:layout_constraintStart_toStartOf="@+id/gl_a"
+        app:layout_constraintTop_toTopOf="@+id/gl_m" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
