@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText etA, etB, etC, etD;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Double c;
     Double d;
     Double res;
+    Integer entero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,10 +64,22 @@ public class MainActivity extends AppCompatActivity {
                     res = (a*d)/b;
                 }else if(d==0.0){
                     res =(b*c)/a;
+                }else{
+                    res = 0.0;
+                    Toast.makeText(MainActivity.this,"Debe dejar una variable en blanco", Toast.LENGTH_LONG).show();
                 }
 
-                tvResultado.setText(res.toString());
+                entero = (int) Math.floor(res);
+                if((entero-res)==0){
+                    tvResultado.setText(entero.toString());
+                }
+                else{
+                    Double red = Math.round(res*10.0)/10.0;
+                    tvResultado.setText(red.toString());
+                }
             }
         });
     }
+
+
 }
